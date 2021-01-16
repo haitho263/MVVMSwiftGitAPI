@@ -1,0 +1,36 @@
+PODS:
+  - MVVM-Swift (5.0.1)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+
+DEPENDENCIES:
+  - MVVM-Swift
+  - SwifterSwift (= 4.6.0)
+
+SPEC REPOS:
+  trunk:
+    - MVVM-Swift
+    - SwifterSwift
+
+SPEC CHECKSUMS:
+  MVVM-Swift: 0333cd8a16abfe0e93a1423bfddb49b8c11065e1
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+
+PODFILE CHECKSUM: 2d4abe9cea956e66f243261fbda29fbe3e65fa61
+
+COCOAPODS: 1.10.1

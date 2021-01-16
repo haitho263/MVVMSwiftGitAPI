@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,11 @@
 		4C53BDC425B1D27B00B662EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BDC325B1D27B00B662EE /* SceneDelegate.swift */; };
 		4C53BDCB25B1D27B00B662EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C53BDCA25B1D27B00B662EE /* Assets.xcassets */; };
 		4C53BDCE25B1D27B00B662EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C53BDCC25B1D27B00B662EE /* LaunchScreen.storyboard */; };
-		4C53BDD925B1D2EA00B662EE /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BDD725B1D2EA00B662EE /* TrendingViewController.swift */; };
 		4C53BDDA25B1D2EA00B662EE /* TrendingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C53BDD825B1D2EA00B662EE /* TrendingViewController.xib */; };
+		4C53BDE125B1D95600B662EE /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BDDF25B1D95600B662EE /* TrendingTableViewCell.swift */; };
+		4C53BDE225B1D95600B662EE /* TrendingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C53BDE025B1D95600B662EE /* TrendingTableViewCell.xib */; };
+		4CC4411B25B29C1D006847EB /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C53BDD725B1D2EA00B662EE /* TrendingViewController.swift */; };
+		4CF09E6425B29FF30028CA20 /* Pods_Trending.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF09E6325B29FF30028CA20 /* Pods_Trending.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		4C53BDCF25B1D27B00B662EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C53BDD725B1D2EA00B662EE /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		4C53BDD825B1D2EA00B662EE /* TrendingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingViewController.xib; sourceTree = "<group>"; };
+		4C53BDDF25B1D95600B662EE /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
+		4C53BDE025B1D95600B662EE /* TrendingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingTableViewCell.xib; sourceTree = "<group>"; };
+		4CF09E6325B29FF30028CA20 /* Pods_Trending.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Trending.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E5CD5725D2D3F6196A47DA /* Pods-Trending.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trending.release.xcconfig"; path = "Target Support Files/Pods-Trending/Pods-Trending.release.xcconfig"; sourceTree = "<group>"; };
+		F702BCD18F26FCA92E3017B0 /* Pods-Trending.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trending.debug.xcconfig"; path = "Target Support Files/Pods-Trending/Pods-Trending.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF09E6425B29FF30028CA20 /* Pods_Trending.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				4C53BDC025B1D27B00B662EE /* Trending */,
 				4C53BDBF25B1D27B00B662EE /* Products */,
+				7A7C0F0D22307B59D3450B76 /* Pods */,
+				AE32591300FC503CCA290A40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				4C53BDCF25B1D27B00B662EE /* Info.plist */,
 				4C53BDD725B1D2EA00B662EE /* TrendingViewController.swift */,
 				4C53BDD825B1D2EA00B662EE /* TrendingViewController.xib */,
+				4C53BDDF25B1D95600B662EE /* TrendingTableViewCell.swift */,
+				4C53BDE025B1D95600B662EE /* TrendingTableViewCell.xib */,
 			);
 			path = Trending;
+			sourceTree = "<group>";
+		};
+		7A7C0F0D22307B59D3450B76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F702BCD18F26FCA92E3017B0 /* Pods-Trending.debug.xcconfig */,
+				62E5CD5725D2D3F6196A47DA /* Pods-Trending.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE32591300FC503CCA290A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CF09E6325B29FF30028CA20 /* Pods_Trending.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C53BDD225B1D27B00B662EE /* Build configuration list for PBXNativeTarget "Trending" */;
 			buildPhases = (
+				63C210A6E95307D047C2497E /* [CP] Check Pods Manifest.lock */,
 				4C53BDBA25B1D27B00B662EE /* Sources */,
 				4C53BDBB25B1D27B00B662EE /* Frameworks */,
 				4C53BDBC25B1D27B00B662EE /* Resources */,
+				52D0CD99FA9428E0E10305D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +130,7 @@
 				TargetAttributes = {
 					4C53BDBD25B1D27B00B662EE = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -124,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C53BDE225B1D95600B662EE /* TrendingTableViewCell.xib in Resources */,
 				4C53BDCE25B1D27B00B662EE /* LaunchScreen.storyboard in Resources */,
 				4C53BDCB25B1D27B00B662EE /* Assets.xcassets in Resources */,
 				4C53BDDA25B1D2EA00B662EE /* TrendingViewController.xib in Resources */,
@@ -132,14 +166,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52D0CD99FA9428E0E10305D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trending/Pods-Trending-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trending/Pods-Trending-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trending/Pods-Trending-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C210A6E95307D047C2497E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trending-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C53BDBA25B1D27B00B662EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C53BDE125B1D95600B662EE /* TrendingTableViewCell.swift in Sources */,
+				4CC4411B25B29C1D006847EB /* TrendingViewController.swift in Sources */,
 				4C53BDC225B1D27B00B662EE /* AppDelegate.swift in Sources */,
 				4C53BDC425B1D27B00B662EE /* SceneDelegate.swift in Sources */,
-				4C53BDD925B1D2EA00B662EE /* TrendingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,40 +352,42 @@
 		};
 		4C53BDD325B1D27B00B662EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F702BCD18F26FCA92E3017B0 /* Pods-Trending.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35VSK3XB8A;
 				INFOPLIST_FILE = Trending/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.haitho.Trending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		4C53BDD425B1D27B00B662EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E5CD5725D2D3F6196A47DA /* Pods-Trending.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35VSK3XB8A;
 				INFOPLIST_FILE = Trending/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.haitho.Trending;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
